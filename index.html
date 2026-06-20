@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Arsenijev tata</title>
+<meta name="theme-color" content="#2F4A3A">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Arsenijev tata">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<style>
+  :root{--paper:#F4EFE3;--card:#FCFAF4;--ink:#233027;--olive:#2F4A3A;--green:#3E7C5E;
+    --green-soft:#E7F0EA;--terra:#BE6A43;--terra-soft:#F6E7DD;--brass:#B8924A;--muted:#8B8475;--line:#E6DECF;
+    --field:#FFFDF8;--track:#EDE6D7;--chip:#F1EBDD;
+    --carb:#C98A3C;--fat:#C2603F;--prot:#3E7C5E;--sugar:#9B5BA0;
+    --shadow:0 1px 2px rgba(35,48,39,.04),0 10px 30px rgba(35,48,39,.07);}
+  body.dark{--paper:#161E1A;--card:#1F2A24;--ink:#E9E5D9;--green-soft:#23362B;--terra-soft:#3A2A22;
+    --muted:#9AA298;--line:#2C382F;--field:#27332C;--track:#2C382F;--chip:#27332C;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.4);}
+  body.dark .note.info{color:#A6D8BC}body.dark .note.warn{color:#F0B79A}
+  body.dark .cday.under{color:#A6D8BC}body.dark .cday.over{color:#F0B79A}
+  body.dark .tag{background:#23362B;color:#A6D8BC}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:var(--paper);color:var(--ink)}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased;padding-bottom:94px;padding-top:env(safe-area-inset-top);transition:background .3s,color .3s}
+  .wrap{max-width:560px;margin:0 auto;padding:0 16px}
+  h1,h2,h3{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;font-weight:600;letter-spacing:-.01em}
+  .num{font-variant-numeric:tabular-nums}
+  header{padding:18px 0 4px}
+  .topbar{display:flex;align-items:center}
+  .greet{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--brass);font-weight:600}
+  .themebtn{margin-left:auto;background:none;border:1px solid var(--line);border-radius:50%;width:34px;height:34px;font-size:15px;cursor:pointer}
+  .brand{display:flex;align-items:center;gap:10px;margin-top:2px}
+  .brand h1{font-size:25px}
+  .brand .streak{margin-left:auto;font-size:12px;background:var(--green-soft);color:var(--green);padding:5px 11px;border-radius:20px;font-weight:600}
+  .hero{background:linear-gradient(160deg,#314c3c,#273e30);color:#F4EFE3;border-radius:22px;box-shadow:var(--shadow);padding:22px;margin-top:14px;position:relative;overflow:hidden}
+  .hero:before{content:"";position:absolute;right:-40px;top:-40px;width:160px;height:160px;border-radius:50%;border:1px solid rgba(184,146,74,.25)}
+  .ringbox{display:flex;align-items:center;gap:20px}
+  .ringwrap{position:relative;width:140px;height:140px;flex:0 0 auto}
+  .ringwrap .ctr{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+  .ringwrap .ctr .big{font-family:"Iowan Old Style",Georgia,serif;font-size:30px;line-height:1}
+  .ringwrap .ctr .lbl{font-size:10px;letter-spacing:.07em;text-transform:uppercase;opacity:.7;margin-top:3px}
+  .hero-stats{flex:1}
+  .hero-stats .r{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid rgba(244,239,227,.12);font-size:14px}
+  .hero-stats .r:last-child{border-bottom:none}
+  .hero-stats .r .terra{color:#F0B79A}.hero-stats .r .ok{color:#A6D8BC}
+  nav.tabs{position:fixed;bottom:0;left:0;right:0;background:rgba(244,239,227,.93);backdrop-filter:blur(12px);border-top:1px solid var(--line);z-index:50;padding-bottom:env(safe-area-inset-bottom)}
+  body.dark nav.tabs{background:rgba(22,30,26,.92)}
+  nav.tabs .inner{max-width:560px;margin:0 auto;display:flex}
+  nav.tabs button{flex:1;background:none;border:none;padding:9px 2px 11px;color:var(--muted);font-size:10px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:3px;font-family:inherit}
+  nav.tabs button .ic{font-size:17px;line-height:1}
+  nav.tabs button.active{color:var(--green)}
+  section.tab{display:none;animation:fade .25s ease}
+  section.tab.active{display:block}
+  @keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:18px;margin-top:14px}
+  .card h2{font-size:16px;margin-bottom:4px}.card .sub{color:var(--muted);font-size:13px;margin-bottom:12px}
+  label{display:block;font-size:12px;color:var(--muted);margin:10px 0 5px;text-transform:uppercase;letter-spacing:.04em}
+  input,select,textarea{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:11px;background:var(--field);font-size:15px;font-family:inherit;color:var(--ink)}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--green)}
+  .row{display:flex;gap:10px}.row>div{flex:1}
+  button.btn{width:100%;padding:13px;border:none;border-radius:13px;background:var(--olive);color:#fff;font-size:15px;font-weight:600;cursor:pointer;font-family:inherit;margin-top:14px;transition:opacity .2s}
+  button.btn:active{opacity:.85}
+  button.btn.green{background:var(--green)}button.btn.brass{background:var(--brass)}
+  button.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+  button.btn.sm{width:auto;padding:9px 15px;font-size:14px;margin:0}
+  .pwrap{margin-top:10px}.pwrap .top{display:flex;justify-content:space-between;font-size:13px}
+  .pbar{height:9px;border-radius:6px;background:var(--track);overflow:hidden;margin-top:6px}
+  .pbar>i{display:block;height:100%;width:0;border-radius:6px;transition:width .5s;background:var(--green)}
+  .pbar.over>i{background:var(--terra)}
+  .macrobar{height:14px;border-radius:7px;overflow:hidden;display:flex;margin-top:12px;background:var(--track)}
+  .macrobar>span{height:100%}
+  .mlegend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;margin-top:9px}
+  .mlegend i{width:9px;height:9px;border-radius:2px;display:inline-block;margin-right:5px;vertical-align:middle}
+  .water{display:flex;gap:8px;margin-top:8px}
+  .water button{flex:1;border:1px solid var(--line);background:var(--field);border-radius:11px;padding:10px 4px;font-size:13px;cursor:pointer;color:var(--ink);font-family:inherit}
+  .entry{display:flex;align-items:center;gap:10px;padding:11px 0;border-bottom:1px solid var(--line)}
+  .entry:last-child{border-bottom:none}
+  .entry .nm{flex:1}.entry .nm .t{font-weight:500}.entry .nm .m{font-size:12px;color:var(--muted)}
+  .entry .kc{font-variant-numeric:tabular-nums;font-weight:600}
+  .entry .x{color:var(--muted);cursor:pointer;font-size:18px;padding:2px 6px;border:none;background:none}
+  .tag{font-size:10px;text-transform:uppercase;letter-spacing:.04em;padding:2px 6px;border-radius:5px;background:var(--green-soft);color:var(--green);margin-left:6px}
+  .note{font-size:13px;border-radius:12px;padding:11px 13px;margin-top:12px;line-height:1.45}
+  .note.warn{background:var(--terra-soft);color:#8a4422}.note.info{background:var(--green-soft);color:#2c5a43}
+  .empty{text-align:center;color:var(--muted);font-size:14px;padding:22px 0}
+  .drop{border:1.5px dashed var(--line);border-radius:14px;padding:22px 16px;text-align:center;color:var(--muted);cursor:pointer;background:var(--field)}
+  .drop:hover{border-color:var(--green);color:var(--green)}
+  .preview{margin-top:12px;border-radius:12px;overflow:hidden;border:1px solid var(--line);display:none}
+  .preview img{width:100%;display:block;max-height:200px;object-fit:cover}
+  .spinner{width:18px;height:18px;border:2.5px solid var(--green-soft);border-top-color:var(--green);border-radius:50%;animation:spin .8s linear infinite;display:inline-block;vertical-align:middle}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .prod{border:1px solid var(--line);border-radius:13px;padding:14px;margin-top:12px;background:var(--field)}
+  .prod .nmx{font-weight:600;font-size:15px}.prod .br{font-size:12px;color:var(--muted)}
+  .ntab{display:flex;gap:6px;margin-top:10px;flex-wrap:wrap}
+  .ntab>div{flex:1;min-width:54px;background:var(--chip);border-radius:9px;padding:7px;text-align:center}
+  .ntab .nv{font-weight:600;font-variant-numeric:tabular-nums}.ntab .nl{font-size:10px;color:var(--muted);text-transform:uppercase}
+  .qual{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px;align-items:center}
+  .badge{font-size:11px;font-weight:700;padding:3px 8px;border-radius:6px;color:#fff}
+  .chip2{font-size:11px;padding:3px 8px;border-radius:6px;background:var(--chip);color:var(--ink)}
+  .src{font-size:11px;color:var(--muted);margin-top:8px}
+  .res{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);cursor:pointer}
+  .res:hover{opacity:.7}.res .info{flex:1}.res .info .t{font-weight:500;font-size:14px}.res .info .m{font-size:12px;color:var(--muted)}
+  .stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+  .stat{background:var(--field);border:1px solid var(--line);border-radius:13px;padding:12px}
+  .stat .k{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+  .stat .v{font-size:22px;font-family:"Iowan Old Style",Georgia,serif;margin-top:2px}.stat .v small{font-size:12px;color:var(--muted);font-family:inherit}
+  svg.chart{width:100%;display:block;overflow:visible}
+  .disc{font-size:11px;color:var(--muted);line-height:1.5;margin-top:14px;text-align:center;padding:0 6px}
+  .calbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+  .calbar button{background:none;border:1px solid var(--line);border-radius:9px;width:34px;height:34px;font-size:18px;cursor:pointer;color:var(--ink)}
+  .calbar b{font-family:"Iowan Old Style",Georgia,serif;font-size:17px}
+  .calgrid{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}
+  .cwd{text-align:center;font-size:10px;color:var(--muted);text-transform:uppercase}
+  .cday{aspect-ratio:1;display:flex;align-items:center;justify-content:center;border-radius:9px;font-size:13px;font-variant-numeric:tabular-nums;cursor:pointer;background:var(--track);color:var(--ink)}
+  .cday.empty{background:transparent;cursor:default}
+  .cday.under{background:var(--green-soft);color:var(--green);font-weight:700}
+  .cday.over{background:var(--terra-soft);color:var(--terra);font-weight:700}
+  .cday.today{outline:2px solid var(--olive);outline-offset:-2px}
+  .cday.sel{box-shadow:0 0 0 2px var(--brass)}.cday.fut{opacity:.4}
+  .dd-h{display:flex;justify-content:space-between;align-items:center;margin:16px 0 4px;font-size:15px}
+  .modal{position:fixed;inset:0;background:rgba(35,48,39,.6);display:none;align-items:center;justify-content:center;z-index:100;padding:20px}
+  .modal.open{display:flex}
+  .modal .box{background:var(--card);border-radius:18px;padding:18px;max-width:440px;width:100%;box-shadow:var(--shadow)}
+  .modal .box h3{font-size:18px;margin-bottom:10px}.modal ol{margin:8px 0 8px 18px;font-size:14px;line-height:1.7}
+  #scanVideo{width:100%;border-radius:12px;background:#000;aspect-ratio:3/4;object-fit:cover}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="topbar"><div class="greet" id="greet">Zdravo</div>
+      <button class="themebtn" onclick="toggleTheme()" id="themeBtn">🌙</button></div>
+    <div class="brand"><h1>Arsenijev tata</h1><span class="streak" id="streak">🔥 0 dana</span></div>
+    <div class="hero"><div class="ringbox">
+      <div class="ringwrap">
+        <svg viewBox="0 0 140 140" style="width:140px;height:140px">
+          <circle cx="70" cy="70" r="60" fill="none" stroke="rgba(244,239,227,.15)" stroke-width="12"/>
+          <circle id="ring" cx="70" cy="70" r="60" fill="none" stroke="#A6D8BC" stroke-width="12" stroke-linecap="round" stroke-dasharray="377" stroke-dashoffset="377" transform="rotate(-90 70 70)"/>
+        </svg>
+        <div class="ctr"><div class="big num" id="ringNum">—</div><div class="lbl" id="ringLbl">preostalo</div></div>
+      </div>
+      <div class="hero-stats">
+        <div class="r"><span>Uneseno</span><b class="num" id="hEaten">0</b></div>
+        <div class="r"><span>Cilj</span><b class="num" id="hGoal">—</b></div>
+        <div class="r"><span>Bilans</span><b id="hBal">—</b></div>
+      </div>
+    </div></div>
+  </header>
+
+  <!-- DANAS -->
+  <section class="tab active" id="tab-danas">
+    <div class="card">
+      <h2>Makroi danas</h2>
+      <div id="macroGoals"></div>
+      <div class="macrobar" id="macrobar"></div>
+      <div class="mlegend" id="mlegend"></div>
+    </div>
+    <div class="card">
+      <h2>Voda</h2>
+      <div class="pwrap"><div class="top"><span id="waterTxt">0 ml</span><span class="num" id="waterGoal">cilj —</span></div>
+        <div class="pbar"><i id="waterBar" style="background:#5B8FB0"></i></div></div>
+      <div class="water">
+        <button onclick="addWater(250)">+ čaša<br>250 ml</button>
+        <button onclick="addWater(500)">+ flaša<br>500 ml</button>
+        <button onclick="addWater(-250)">− 250 ml</button>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Posljednjih 7 dana</h2>
+      <div class="sub">Dnevni unos vs. cilj (isprekidana linija).</div>
+      <svg class="chart" id="week" viewBox="0 0 320 150" height="150"></svg>
+    </div>
+    <div class="card">
+      <h2>Dnevnik — danas</h2>
+      <div id="entries"><div class="empty">Još nema unosa. Skeniraj proizvod u kartici "Skener".</div></div>
+    </div>
+  </section>
+
+  <!-- SKENER -->
+  <section class="tab" id="tab-skener">
+    <div class="card">
+      <h2>Skeniraj proizvod</h2>
+      <div class="sub">Uživo skener, slikanje ili barkod — podaci se povlače sa interneta (Open Food Facts) i pamte za offline.</div>
+      <button class="btn green" onclick="startLiveScan()">📷 Uživo skeniraj barkod</button>
+      <div class="drop" style="margin-top:10px" onclick="document.getElementById('photoInput').click()">🖼️ Ili slikaj proizvod / barkod</div>
+      <input id="photoInput" type="file" accept="image/*" capture="environment" style="display:none" onchange="onPhoto(event)">
+      <div class="preview" id="preview"><img id="previewImg"></div>
+      <div id="scanStatus"></div>
+      <div id="scanResult"></div>
+      <div id="dbTest" style="margin-top:8px"></div>
+      <button class="btn ghost" onclick="testDB()">🔌 Provjeri vezu sa bazom</button>
+    </div>
+
+    <div class="card" id="savedCard" style="display:none">
+      <h2>Sačuvani / nedavni</h2>
+      <div class="sub">Dostupni i bez interneta. Dodirni za ponovni unos.</div>
+      <div id="savedList"></div>
+    </div>
+
+    <div class="card">
+      <h2>Pretraga po nazivu</h2>
+      <div class="sub">Ako nemaš barkod — ukucaj naziv proizvoda.</div>
+      <div class="row">
+        <div><input id="q" placeholder="npr. Plazma keks" onkeydown="if(event.key==='Enter')searchName()"></div>
+        <div style="flex:0 0 auto;display:flex;align-items:flex-end"><button class="btn sm green" onclick="searchName()">Traži</button></div>
+      </div>
+      <div id="searchStatus"></div><div id="searchResults"></div>
+    </div>
+
+    <details class="card" style="cursor:pointer">
+      <summary style="font-family:'Iowan Old Style',Georgia,serif;font-size:16px;font-weight:600">Ručni unos / domaće jelo</summary>
+      <div class="sub" style="margin-top:8px">Za kuvana jela ili proizvod kojeg nema u bazi.</div>
+      <label>Naziv</label><input id="fName" placeholder="npr. Pasulj sa kobasicom">
+      <div class="row">
+        <div><label>Kalorije</label><input id="fKcal" type="number" inputmode="numeric" placeholder="kcal"></div>
+        <div><label>Proteini (g)</label><input id="fProt" type="number" inputmode="numeric" placeholder="opc."></div>
+      </div>
+      <button class="btn green" onclick="addManual()">Dodaj u dnevnik</button>
+      <button class="btn ghost" onclick="document.getElementById('mealInput').click()">📷 Procijeni jelo iz slike (AI)</button>
+      <input id="mealInput" type="file" accept="image/*" capture="environment" style="display:none" onchange="onMeal(event)">
+      <div id="mealStatus"></div><div id="mealResult"></div>
+    </details>
+  </section>
+
+  <!-- KALENDAR -->
+  <section class="tab" id="tab-kalendar">
+    <div class="card">
+      <h2>Kalendar</h2>
+      <div class="sub">Zeleno = dan u cilju, terakota = preko cilja. Dodirni dan za detalje.</div>
+      <div class="calbar"><button onclick="changeMonth(-1)">‹</button><b id="calTitle"></b><button onclick="changeMonth(1)">›</button></div>
+      <div class="calgrid" id="calGrid"></div>
+      <div id="dayDetail"></div>
+    </div>
+    <div class="card">
+      <h2>Progres — <span id="progMonth"></span></h2>
+      <div class="sub">Pregled za prikazani mjesec.</div>
+      <div class="stat-grid" id="progGrid"></div>
+      <div class="src" style="margin-top:10px">Procjena promjene se računa iz deficita po evidentiranim danima (≈7700 kcal = 1 kg). Stvarni rezultat varira.</div>
+    </div>
+  </section>
+
+  <!-- TEŽINA -->
+  <section class="tab" id="tab-tezina">
+    <div class="card">
+      <h2>Unos težine</h2>
+      <div class="sub">Najbolje ujutru, jednom dnevno. Sinhronizuje se sa profilom.</div>
+      <div class="row">
+        <div><label>Težina (kg)</label><input id="wKg" type="number" inputmode="decimal" placeholder="npr. 82.4"></div>
+        <div style="flex:0 0 auto;display:flex;align-items:flex-end"><button class="btn sm green" onclick="addWeight()">Sačuvaj</button></div>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Trend težine</h2>
+      <div class="sub" id="trendSub">Nema dovoljno podataka.</div>
+      <svg class="chart" id="spark" viewBox="0 0 320 130" height="130"></svg>
+      <div id="projection"></div><div id="wlist" style="margin-top:6px"></div>
+    </div>
+  </section>
+
+  <!-- PROFIL -->
+  <section class="tab" id="tab-profil">
+    <div class="card">
+      <h2>Profil i cilj</h2>
+      <div class="sub">Računa se uživo dok kucaš. Sačuvaj da ostane zapamćeno.</div>
+      <div class="row">
+        <div><label>Pol</label><select id="pSex"><option value="m">Muški</option><option value="z">Ženski</option></select></div>
+        <div><label>Godine</label><input id="pAge" type="number" inputmode="numeric" placeholder="35"></div>
+      </div>
+      <div class="row">
+        <div><label>Visina (cm)</label><input id="pHt" type="number" inputmode="numeric" placeholder="183"></div>
+        <div><label>Težina (kg)</label><input id="pWt" type="number" inputmode="decimal" placeholder="82"></div>
+      </div>
+      <label>Nivo aktivnosti</label>
+      <select id="pAct"><option value="1.2">Sjedeći</option><option value="1.375">Lagano aktivan (1–3x)</option>
+        <option value="1.55" selected>Umjereno aktivan (3–5x)</option><option value="1.725">Vrlo aktivan (6–7x)</option>
+        <option value="1.9">Izuzetno aktivan</option></select>
+      <div class="row">
+        <div><label>Cilj</label><select id="pGoal"><option value="-250">Blagi deficit (~0.25 kg/sedm.)</option>
+          <option value="-500" selected>Umjereni deficit (~0.5 kg/sedm.)</option><option value="0">Održavanje</option>
+          <option value="300">Blagi suficit</option></select></div>
+        <div><label>Ciljna težina (kg)</label><input id="pTarget" type="number" inputmode="decimal" placeholder="opc."></div>
+      </div>
+      <button class="btn green" onclick="saveProfile()">Sačuvaj</button>
+    </div>
+    <div class="card" id="resultCard" style="display:none">
+      <h2>Rezultat</h2><div class="sub">BMI metar i ključni brojevi.</div>
+      <svg class="chart" id="bmiGauge" viewBox="0 0 220 132" height="132"></svg>
+      <div style="text-align:center;margin-top:-6px"><span class="num" style="font-family:'Iowan Old Style',Georgia,serif;font-size:24px" id="rBmi">—</span>
+        <span style="color:var(--muted)" id="rBmiCat"></span></div>
+      <div class="stat-grid">
+        <div class="stat"><div class="k">BMR</div><div class="v num"><span id="rBmr">—</span> <small>kcal</small></div></div>
+        <div class="stat"><div class="k">TDEE</div><div class="v num"><span id="rTdee">—</span> <small>kcal</small></div></div>
+        <div class="stat"><div class="k">Cilj kalorija</div><div class="v num"><span id="rGoal">—</span> <small>kcal</small></div></div>
+        <div class="stat"><div class="k">Makro ciljevi</div><div class="v num" style="font-size:13px;line-height:1.5" id="rMacros">—</div></div>
+      </div>
+      <div id="profileNote"></div>
+    </div>
+    <div class="card">
+      <h2>Podaci i izvoz</h2>
+      <div class="sub">Izvoz dnevnika, rezervna kopija i prenos na drugi uređaj.</div>
+      <button class="btn ghost" onclick="exportCSV()">📄 Izvezi dnevnik (CSV za Excel)</button>
+      <button class="btn ghost" onclick="exportPDF()">🧾 Sažetak za štampu / PDF</button>
+      <button class="btn ghost" onclick="backupJSON()">💾 Napravi rezervnu kopiju (JSON)</button>
+      <button class="btn ghost" onclick="document.getElementById('restoreInput').click()">↩️ Vrati iz kopije</button>
+      <input id="restoreInput" type="file" accept="application/json,.json" style="display:none" onchange="restoreJSON(event)">
+      <div class="src" style="margin-top:8px">Prenos na drugi uređaj: napravi kopiju ovdje, pa je na drugom telefonu učitaj preko „Vrati iz kopije".</div>
+    </div>
+    <div class="card">
+      <h2>Instalacija na telefon</h2><div class="sub">Dodaj "Arsenijev tata" na početni ekran (radi i offline).</div>
+      <button class="btn brass" onclick="installApp()">📲 Dodaj na početni ekran</button>
+    </div>
+    <div class="disc">Podaci o namirnicama: Open Food Facts (otvorena internet baza). Orijentacioni alat, ne medicinski savjet. Limiti šećera i soli su prema opštim preporukama (WHO).</div>
+  </section>
+</div>
+
+<nav class="tabs"><div class="inner">
+  <button class="active" data-t="danas" onclick="go('danas')"><span class="ic">📋</span>Danas</button>
+  <button data-t="skener" onclick="go('skener')"><span class="ic">📷</span>Skener</button>
+  <button data-t="kalendar" onclick="go('kalendar')"><span class="ic">📅</span>Kalendar</button>
+  <button data-t="tezina" onclick="go('tezina')"><span class="ic">⚖️</span>Težina</button>
+  <button data-t="profil" onclick="go('profil')"><span class="ic">👤</span>Profil</button>
+</div></nav>
+
+<div class="modal" id="installModal"><div class="box"><h3>Dodavanje na početni ekran</h3>
+  <div id="installBody"></div>
+  <button class="btn ghost" style="margin-top:14px" onclick="document.getElementById('installModal').classList.remove('open')">U redu</button></div></div>
+
+<div class="modal" id="scanModal"><div class="box"><h3>Uživo skener</h3>
+  <video id="scanVideo" autoplay playsinline muted></video>
+  <div id="liveStatus" class="src">Usmjeri kameru na barkod…</div>
+  <button class="btn ghost" style="margin-top:12px" onclick="stopLiveScan()">Zatvori</button></div></div>
+
+<div class="modal" id="addModal"><div class="box"><h3>Dodaj proizvod koji fali</h3>
+  <div class="sub">Sačuva se lokalno (tvoja baza) i koristi se odmah. Vrijednosti su na 100 g.</div>
+  <label>Naziv</label><input id="apName">
+  <label>Barkod (opciono)</label><input id="apCode" type="number" inputmode="numeric">
+  <div class="row"><div><label>kcal/100g</label><input id="apKcal" type="number" inputmode="numeric"></div>
+    <div><label>Proteini</label><input id="apP" type="number" inputmode="numeric"></div></div>
+  <div class="row"><div><label>UH</label><input id="apC" type="number" inputmode="numeric"></div>
+    <div><label>Masti</label><input id="apF" type="number" inputmode="numeric"></div>
+    <div><label>Šećeri</label><input id="apSu" type="number" inputmode="numeric"></div></div>
+  <button class="btn green" onclick="saveCustom()">Sačuvaj u moju bazu</button>
+  <a id="offLink" class="btn ghost" style="display:block;text-align:center;text-decoration:none" target="_blank">🌍 Doprinesi javnoj OFF bazi</a>
+  <button class="btn ghost" onclick="document.getElementById('addModal').classList.remove('open')">Otkaži</button></div></div>
+
+<script>
+const ICON192="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAIAAADdvvtQAAAlmklEQVR42u2dZ3Bc2ZWYz7n3vtQJQCMHggAYwRyHwxxG0oxmSGmTZZd3t6S1y2vLtWVV2T/s2pJL5XWVq2xXrWtXK9eWbYVdabdWq5FWYYK0MyNOIocTSM5wmEkABJhAhAbQ6O4XbvKPB2JIDgGCoRto8J3CD4buhxe+d865556Aa5/dBpFE8qBColsQSQRQJBFAkUQARRIBFEkkEUCRRABFEgEUSQRQJJFEAEUSARRJBFAkEUCRRBIBFEkEUCQRQJFEAEUSSQRQJBFAkUQARRIBFEkEUCSRRABFEgEUSQRQJBFAkUQSARRJ8YVFtwAAEADx/r6iAbSO7txjCRACAAICIIDUAABSQyB0iJCcFguCgAAagBIwCE7+iwIADToCaD5b65s6hitQUgsFSoNjIADEDFxaw5QGAFhRZ8QMlBrwUyqHIpwb5KOeNhmMuqp/XFECBa6lAoMCQTToxLf0YwMTe0y4kRpcrpUGQKiOkRgjHdWswiZLqw2Lgc2wKUWVAkBwGBK8++NHgN3tllBACWR9PZCTBsXzg3zMVxeHRT7QA3kpJACAydAgjwVJ8xYgxAkL5XItNcRN7KwzmlN0cTVrStEqm8RMYlIQChDAl3ogp8KvnB/intDkbj6R1HpR2khZyBXETVxRZ0gFS6oZImQ95Qm4mhW9o7J3RFwaEUMFpfUnJCkdAVRW7rAntFAQN3FZrbGyzgjpcQwkCIHULtdnB3nOV2cGRSB0nuvujKAEtIYxTwl1d59aa6iw0aTIFVTHyIIKGki9vNaotElLBU2YZH2juaYBhNJDeXUxI072BxeGxXBBaQ3hr55/rjfOmw5lof4QCgKpAWBJNVvXZC6rMVoqaNxEqWDEVUN51TMi+sbEpYwYKihP6NDEEASTTiDDpo1sSAUq9L6V5goAgCIgQnWMNqXowkq6KG3UJkhdnFgMuYTBvLwwJE7e4B/1B/lAmxQMijiPFNJ8ACjUOoEEoXTSwrUN5sZmsyPN0g7hCgZysisjrmblyRv8xrj0pVYaDAoGQXKLmlE3vWY9g1+nb/I66V8LCUJpocBimLJwea3RkWatlXRhJXMMDKS+NCLODIrDvf5ATkoNjjFPMCp7gAhCICEQuiFJd3dY6xvN6hiJmZj1dPcI/+ga/+BqMOYpqcEgYNAJaB65KZk0nVqD0BBIrTXEDVxUzba1Wh3VrClBpYYRV3WPiINd3plBrjXYBkKZG7UyBoggKA0u1/UJuqvd2rLArI1TrWGwII9fDT6+wU8PcKluWRCV6lFNwhSGl6SG5hRd12iuaTQWp5lB0eX61A1+sMc7M8BD61m+qqgsAQrNh8s1o/jMEnt3h10TI0LprmFxZpC/0xdcy0pGwDYQZ3shHSo8LsETKm6STc3m6gajs86osEg+0KcH+Y9PFq5kZdzA8H2IACqNzdK+gM0LzGeXOq2VlBHsyoiD3d6xq0E+0BZDk86tlTMCEJyIKSDCojTb22FvbDYthpmCPNwXvHTOdbmOm1h2cSPasGRBeTnLOV83p+g/Xxt/Zqldn6Ajrnqj2//Bh/kLw8KgOBkGnGuPITwfi6FBcaig3r8aZAqq0sGGBF1aY3TWMq6gOyMIQUrKiaGyASh8g7nU+xbZv78+vqzGAIBDff53Psi/dyUgiA7DOcjNpzHSAIyiRbE7I969HIy4qq2KNqfY6gajIUkvDosc1yZFHQH0KM8SwRPaYviHm5OfXWzHTDw/JP7qeP61Ls+XOmYghNuZ5SMawGIIABeHxfFrASAurGJtlWxDs3ktKy+PSZshYATQI/Iexjy9ss74t08mF1UzV+hXLvjfP57vH5e2gZSU6xJm0qjluf6wn18dky0VtD5O1zWZtoEn+jnBMjBncxqgScfziyucL62JpWMk46pvf5A/2O0bFC2K82BbQANQgibFy2Py/Su8IUlbKuiiamNRNTs3xMc8bbM5bc7mLkDhastk+NurYp9f6lgMT1zn33wnd21cxk1EmFe73Bog3GI7ctn3pF5Wa7RUsI40u5KVQ3k1l12iOQoQQfCETtrka9uSm1osqeAnJws//NgVSlsM5+XOdrglRwmeGxLnhvjitNFWxTa3mIN51Z2RjjFH1e1cBCikJ2WRP9qa7KhiN/Lq+ZOFV7t8iyElOO8TSU2K18fV+SFeEyf1CbqmwRwuyK5h6cxJWzbnACII/iQ9adafU986Mv5RP09Z+Jjk+GkAm+GYr97pC+ritC3NVtYZw67qysxFhuYWQLfpnjTrH5ffOjJ+NStTFsrHKd9YAzCChODRa0F1jHakjZX1xnBBdc09WzaHAJqKnjCb53GT0CUiiMeuBdVx2lFlrKw3M3PPls0VgO60XJP0GI+X7vn0bSGIx64G1THaPidt2ZwAKFyxJ+2InqkZut2WdY9Ia24wNPsAIUKYtfO1bak7LVdUuXcHQ3HaXmWsrjevj8veUTkXYoyzX9qMAL7QB5Y7HWl6I3eL7lEROTf9IT2Rtf3do7kjfb5jwG+udKpjJJBA8PEGKNznOtDpPLXIDiS8eNbtHZWJSPdMwRBF+PGpQv+4ak7Rr25JEAJCacTHFaBw2bWmwfjMIhsRfnq68OYlP2WhiHTP3URpMCmOeep/HxkfcdWiNPtCp8Pl46qBwhIcx8DfXRdPWHjiOn/1ohczUEW6Z1qGHAN7R+WL5zxPwOcW2xubzVygKXn8AAIEofQfbEjUJ8hQXn3vWB4Bo2Yz9xSpIGXhKxe9dy/7BOGfrYm3VzGX69lyhmbnkRGEnK93t9trGg1X6L8+ns8FyqAQ2a4Z6qGEic+fLJwdFNUx/K2Vziwm5M8CQIgQSN1aSZ9dZlOEg93eiX5us8h4zdihBqAIBa5/fKow5utV9ca+RbYnZkcJzQZAAL6A55Y7NTFyYVi8fM6LGxjpnvtVQnETLwyJVy96SsEzS5yaGAnkLKzISg0QQXC53rzAXFNvBBJ+dtr1hKYEIFI/98uQgriJv7rg9Y3JSgcPdDpKz0IWdUkBCqvBGcFnlzpxE49c9s8N8Wjl9cCGjCAIqV865xYC/eQCa1mNkS+5N11agBBcrp9ZardW0KGC+sVZd6pWTpHMfFX//pXgw35uUPjiCidR8swFUkp6Aqnrk2R3u80ovHclGMgpk2LUqvIh9ZBB4fVuLx/oxdVsa6tV4iV9CQECCATsarOr49g1LF8+5zrRyuvhAdJgM7wwJF676BOEnQutlE1KqYRKBFCofhpSdMsCUyo42O2NebMZP51nDJkMX+/x+sfVgkq6ZYFZKKESKhVAAFzB7narNk66hsWxa0HYSCCSR2LFTAIZVx3q9QFgZ5tV5RCpSrQiI6WhRyhIWWR9o6k0nBnk+UAXz33Gu8qD3k+c6oCzIVN60wCMwMkbPOw8saLOKIgSxYRK0WQTEQKhn2gxq2NkKK+O9AUWK6L6EVLe0UlKAxBCyAPdUamUnjOqEqe4Cq3BYtg3Kk708+1t5oYm84OrfmkcoVIAFN7+jc1mzMTXu4OrWZm0iuU+a62TsRgh9NbQJCL6QeAHAd4nQ1rrmG0bhjEXGJrJVbzV621sNjvrWGOSXs3Kor6oJQIIEXyul9SwjjTLeurjG5wVp2EAIaTgumuWLf+Lr3/j1uettHYs62x311f/5BtaK4SZpoFSQsdy4//xX/3rA3ufGh8fp5TOIj1SqWQi8e0f/fAv/vYHFYmkVPKurnTfqOwbFUtq2JYF1o8+LpSgALz4AAEIBesazKoY+egaPz3A7eJUNiEgF+LAnr119fX5bPbW56213rJ23aZVq994791kPC6Vui8NlEylCMCsAxRPJm3TnEYXUoRxX797OVhWa6xpMH55gfDie0JFB0hqiFu4rJYJCR9eD8LVgX70eg59HjTX1e97cquXz6vbHReplG3bX9i77/X33tX3/+S0EEIIrbXWWs0APkQkhMzkyDPp+kkoxZunoab9fBgTOjPIb+RkfYK2V9GP+4u+U1RcgMKt07DXxEBeHr1aLPeZEOJ63t7PPt1c35jNjdPbnx+j1HPdHRs2LW5d2Hv9qmWYM/dpJldhAGCapuXE7sE/InCRdwv3PHJFKgW3+2p3Fb9Q4EJMvwqb9DUNCley8uQN/rkl9qo686PrvOydaKlhZb0RN/HoVTHmKac4L4RSKmbbz+3eq6S4623mQlRVVj69fcc3/+b7jmVLeX+5xFpr0zC6r1x++c03GGNT8YeIAedtTc3P7t4jpcS7r5g0IUQI8d0f/2h0fJxROs3RpJRf2PdUc12DF/gzf2lPD/A9HdayWpayCFe6qLkORQQo3HuPG9hZa0ilr2ZlkWotCCH5QmHLmrVrly8veN5dzQcSwjl/ZueuH/ziZ+ELfZ8LSW2a5qUrV/7Hd/6vY9lTPXJCyHgu95lt2w7se2oaRhFRKvXtHz/ffaXPNq3pcdy0anV78wLX92a44GUEbuRk1tMNSdpeRT++wWPFLKcvJkAIHteddUZTio64+mTR1l/h89i/Z69lWb7v39XbJYie5y1ta9+2fsNLb75RkUjM3JWe1ByGYdRUVlmWNQ1AlmGk4omZHLAylaqprDKn9osRUXBuTK3w7uoGmRSvZVVXhm9uttY0mCf6i2vFihuJDpu0xwwcyssbOVmMvXdE9H1/YVPTnie2eK47jfeqARDJgT376NRW454MCXkPEVLOEM2JD9/raPd7qgjApe7JSERoTNJi9+MqIkAaAAEWVxsEoWdE+sVZUhLEgu99Zuu2upraQPBpbBNFdN3Ck2vXLW/vcH0fsRyaoD7QbWcEekZEPlAtFbQ6RngxU12LBRAiCKmr46QpSQOpL48JVYTtvXB9m4rHn921R3CB09cFIQopk8nU53ftDjifyUp7UvFMyKwAoe/794du0IirYya2p5ko5sZqETWQ0hAzsMpBN9A9I8Kgj94BIoQUPHfzqjUrFi/xfI8gTn+XCSGB7z29bXttOs05n8kOKyEEGWOUEsoomYUEFEoppZRRiozNRGtqDYzicEFdz8qYiWmbyHI0YWEAelGaxUy8PCaH8ooVwQEKB/Ds37PPYExpHfq509xlRPSCoK1lwc6NmwrTOkyTn3c9L5/LjRcKuXzO9bzSA1Rw3fF8frxQyOdyAZ/Rdl44Yub8sJASOtLMKWYskRVVA6UsYjLMBdrj2nnUCUAhDYsWtO7cuMl1PQSwDPPVI4fWd66oSlZwJXGqmwtwYO9TL77xutLTebtSybjjfPMH3/8/f/9DpRVBDLiwTLNkpkxrzRj7+p//L0aZBk2QuL4Xd5xPb4Td9dUa85QGqLCxqMllpHj0OAYuq2FCwplBHjrUj9p9Jr7vf277jnRVVSA4o9T1vf/5nf/30dmzlm3pKZZChBDXdTetXLVq8RJ3iqDRrYzmCvnBkeHh0dHBkUw2nyu9BhobHx8azQyPjg6ODBdcd4ZWzKLYkxEDedmQpK2V1JfFylEs7irMYhgmAxUjN0VIUZlKfn7nLsE5ADiOc/jD42d7ul97953p94ykkrFY7Lnde7m8d0SRUmoww2DMYAabjf1UxtjkCczcCUOEcLinSZFiEQOJRQEIb5ZOWgx9ofNc00eNPyWk4Lpb125Y1t7ueh5BlFL+/NevOpb99rGjl65ctqwpbQ1B4nveU1u3NdXWBfdKEtK3y+yuwvT9PAKhIOdrREhZRbRhxQEIIZC6JUWbUnQor7oz4pGHEMMdpQN79yESpZRjWee6u4+c+KgimbwxNPTqO4dN055q5zzMzGppaNz7xJMFzyPzLiCkASiBMV91Z4TNsLPWUOWlgSbdIKUB8dG3YUNE1/eXtbc/uXad63qAyEzz5bffHBsfp4SYhvHLt97M5XLTZPAgopRi/569MdtWan4W5uPNgZuiTCPRRTxpQgLOn9m5uyJVwaUwDSOTyfzj4bdtyxJSOpZ1prvr/ZMnYo4jp3GlPW/t8s51nSsK93Kl5wFJZbkKW1lnOAwvDIkxTz3CuVcIwIWoqap6evsOHvgA2rHtt44d7b58OUzYQ0Qu+ItvHLzXGWrLtPbv2SuVmpebGgTh1AB3hV5SwyrsYhX6FPHNcwxEBE9o8Ui7RoS5zzs2bOpY0Or6PiWUC/HC6wfxFjJithO60tPkgBJEz3P3bN7S2tT0APn2ZSEu12GaIitaEVVxfaDwPcBHfFhtMHZg7z4NoLW2LevMxYu3GqwwHj2YybzyzmHTsqZxpQPO62trP7t1m+vPQ1cabvpAqpiToEm53RHi+t7KxUueWLXadV0AYIbx8ltvjOfzd2TRmwYLXWk2rSsthHh2555k7L7TgyIpS4CQIOfi2V17YvG4kNIyjMGhoVfeOWTfrmmUUrZln+nu+uDkx47jqGld6RVLlmxevbrgufPblY4AAkTknDfU1H5m67bA9wHAtp03jr7fe+3qp7eoCCIX4oU3Dk6/CtFaG4zt37sv6lM0/wEiiHnX3bP5idamJi8IKCEBD158/eBd/V+ldcyeSVQaXc/buWFTx4LW+epKRwBNGiZtW9b+vXvDsi/Htk9eOH/09MmYfRcjFaqWwczwK+8cMk17qo33UKulq9JPb9/h+V5kxeYQQI/WJhBCXM9du3z5+s6VBc9DAMrYS2++ni+4U0WctdaGYf7y7Tdz+RwlVE99ZB74n9+5uypVIYSYT08Xyxog+kjXkAgglNq/e69t21JK0zQHh4dff++9RCyGiPRugoQkY7HzPT3HT5+KTe1KI6Ln+0vb2reuW1/wPDqPlJAsTiSlFAAhwrkh4QvdkWbhxFN8qKOhz3lLQ8PeJ570PA8AbNv++a9f/ejcmYLrZkZHR8bG7vozms0OZIa///OfTh9u1gBI8MCefQTnz2hfrWFZDbMYdmdE1te0OLHEYmUkIsCoq4SClIUWRf5wBBEkBc97asvWxvr6bDZLCfE9f2lb+5//8X822bS9VxCUUo5lu647TTVPuJ5/cu26Ze0dF3ovOZalyr99mgaodAhFyHo6ULpIReWseGdvMqAEuAIuH1aFSiUTjvPc7j3yZpU4F3z7ho2EMdD3ynZEAKXzhfw0nCGAECKVSn1+165T37kQsx3Qch5oIF8AAlisiCaMFYkehjDq6qyv4yZWx8jlrDQf9CIIIblCYfv6DauWLguTUMMd03yhoLWeUbMPRErI9KARQoIgeHr7zr/6h58UPO+Biw/nDj02w5o44Qpu5FSZ+UBhge31nBzIybRDWivpQ45x0Frt37PPNMzQsjDGQseZMcYou7dQiojTJ6SGFa7tLQt2btxc8Nyy3hpDAKkhaWFrJfWF7sqI4l1NEU0YI2ASkDcV6YO7z0HQ1rxg16bNrueC1jEn9je/+Nl3fvJ8Mh6fYS5YuIG/efWa//JH/276aKEG2L933wtvvj4PfCChgEugBKxiZnIXzYlGcLk+NyQW1xjLa9m7V/wHeyCEEM/3P7tte211TTY7RinNF/I/+tVLPVcuT7My//QrqZW+MTz0ewe+sHRhmzcFQ2HBxuZVq1ctXvLx+XMx2y5TjMJChs5aozZOrmfl5aws3kSAIq7ChIKsrxGh0n7w0IoQIpVIPLtzt+CBBog5zq+PvHPuUk+6slLPvFMdAKM0Mzb28ltvrliyVPkexbu/lVLKVCr13K49x06fQkJAlqsrrTSkLLQYFrjOB8VawxcxDqQBTAoXhnnWUy0VtDr+ICX+lJCC521Zs7azY5HneYgIWv/i4K+FkKC1mvFP2FXDtqxXDh/KjIwYU6/8CSG+739m67bG2tqA8/LdGkOAJTUGQTg/JIJizqIrYtSVAOQD7QlIWqQpRR9ggIMGQMQDe/ZRRqXWjmVd6Os9dPxY3HHkfWpkrbVlmt2X+w4dP+pMbZsmCjYaG/c+saXguqQ8p7hKDQkLG5NUKD0eqLJs76I1GAwHcvLqmIxb2FZ53z0iwh2GJa0Lt2/YWHBdADBM61dvvZkZG2ET4Z8HIfKF1w8KIaZ5IxFAKbV/zz7HtpUqPxMW9kWpiZGGJCn4+sJwUdpalEIDhW5Q76iQCjrS7H4joYQQPwie3rGzsqKSC2EyNjo28stDb1mm9WCFOGEfxfc+PnG2p9u2ptyfD5dsa5d3rlveWY4FGwjAJXSkjbiJA3k1nJeMgC7HurDwje8dFUJBXZymLJxJdj0iEkRCiJQyXVHxzI5dE6UXTuydDz/s6uuL2TYAkPsff4GIpmGM5/P/+PbbbNoeCUop27b3796rlCKETJzSFP5Q+L+TnyEzaKd625Xe8vVH5XIhQksFZQSvj8sxTzNSbpWpk1bMZnhpRAzmZW2CLK81ZhJODDh3fT/gfHh0dOu69Yvb2ryJ0gv+9798yfU81/c933d9X9yPfdFae76fd10A/fODrw4MDprTutKe6+7d8mRjXd1oNusHgev7ru/f9fNciMlTCn8CPqO2hJOH/eSKHnrRF2r9dIwsr2FcwtnBcm7zG8YShwqqa1i0pKyONHu717/nY26uq3NsWwN4nv/bn3smXG3FLOvSlSsj2ezqpcuQIGggBIdGRscLeTKjbhXaMs3WxiYAIAQLnnfq4vndm7fwQuGuLz0iciHqqqt/53PP/PS1V1M3m9tfHxzkt3fRU1rXVFZVJJOhVSWEFNxCU13dPbdBEHFhU7PBmDkxiEMTQodHR7K53MMYzTACtDjJauI048qzg6LYMyFx7bPbiqjfEHKB3tZq/eET8YvD4k/fHgeYcvMqrLP5y2/8yc6Nm3OFPA07tEsJiKFZCa1J+OdEPPH1P/vTv3vphXv2W53waZYt/+5/+++3xntm8pwopSEZCKC0/tK//9qtjXkpIWO53B//4Vf/xT/50vj4bd3NZ7KPdiuIUspkRcV//eaffe+nP6lMpeSDqiKCMB7oL3Y6X1ode6cv+Mv3xu0iz1spbqPxcAzRhWE+mFetlWxxmp0a5M60lySlFEIIKZRSt21/Ik7OBlBKSSHua7NTg/4k2xBxAs17hjGlRATQEwDd/YSVkuEshIfQHFLJ+72iu68fNSRNXN1gKA0nbxRrsEQJAQIwCAwX1IUhsavd2rbQOtHPp/+diVicxSsqGQNC7vSS9SdeLlgJc8YTCzQAIzSVqrjtZs/wm7e8DZ9WWlrrmGVRu6ISCd76v3h/B9dSoFXxkO3PECEf6E3N5qI0G8zJ80OiBDONSzIvTMOpAb6l1exIs+YKOpiXxhQXRhBff+/ItYEBL/CncW6U1rZl9Vzpm8kkL601ozSTzT7/8osP9zLoXD5/h50yDOP42TPJX/3Me7g2MUor23Eu9PaaDzGbLHQ61zeajGDPqBjIS7v488KK6wNNXhgB+A87Uktq2d99VHjhrDvNwLm864oZjCIIqzJm+MoiopAyXyg85IUkYrEwr+jWI7ue90jqge7riu6qfrjQtQn6n3alLAO/dWT84+vcMeeFBqIIuUCfGeSLqtnaRuNgtzdNgmsyHp/hw1AzHkYZKqGqioqHvBD5qWkfWuuY7cRjsUdyo9RDjNdEAF/C+iYzYWPfiOzJiBKMKyydCTMpHu7zt7dZi9JsU7P51iU/bt5dCRWp3ZPWWhZna11pBbO94REOxa5NkB0LLQR890ow5unizRUtUSDxNleawkBO9WSEQWF1gxnVfz5igBB8oZdUs9o4GfPU6QFushJNVS/d3Hip9a+7PJdDZy1blGaeABJh9AjDJRS3L7QNCkevBpdGhEVLVOxfIoDCttFnBvmpAV7hkL0dtlBRN4NH9AgR8lyvbjCW1bBRV7/R4xmkdK0iSrfVHIa5DnZ7+UBvbDa3tZr5QEdK6OGNl1A67ZAvrnAMCkevBb2j0iqV/SopQBNKaICfHuAWg6cW28UeZfVYAARQ4LCjzWpJ0VFPH+wuqfqBUnfn0EAQnz9ZGC6otkq2tdV0eaSEHnbx1Zik21stAHj5nNtXWvVTaoDCROmrWXmkL0CAL3TG6hI0kBAh9DCLr99c4TQkSe+oPNznO6WlB0rfHygcw/vCObdnVKQd/Oxi+yHL5h9n37nA9ep6Y3WD4Uv48alCPtCUlLrTGpmVK/e4fu2i5wnY2WatbzIiQ/ZAYRGIG/jbq2JxEz+8HpwZ4EWdCzaHAArnsBzuC96/GhgUfmtlLGGSoo5lnJ9L90Dv73QWVtKBvHr+ZGG23sDZyRgPs11/crIwlFeNSfqVDXEutYaIoRkJRRjz9Z52a3ebrTT84ow7kFMlyNyYSwABMAJjvvrr43lP6DWNxmcX257Q0RbHTHSPL6Gtij633HEMfK3LO9zrJ8xZC4jMWs2K0uAw/Lifv9blKQ2/sTK2uJrlAh11ubyH66NAaf27a+N1cXJhmL9w1mWzpHtmGaCQoYSF/3DKPT3AbQZf2ZhYUEF9ETnU0xEkNXxlQ2JRNctz/b1j+XygDTKbPa5n+33XYDH8mw/zF4dFc5J8aXVMqYkpY5Hc6foQGPPUjoXm9oWWy/UPjuevZ+WsrLzmEEATpT959bcfFQocltcaf7ApEUgdMfRpxznr6R0Lrd9cGUOEN3v8t3v9mDH7e0G0YcmCWWfIYjiUVwN5uabB7Khi1TF67FpAECNbNql7sr5+stX88oZ43CCHev0ffVyImXNiJ3H2AYKJLQ7szsihglxZZ7SnjYih23SPr7e2ml/ekHAYOdTnf+9Yjs2ZFnxzAqCQIYdhV0ZmXLWy3uxIs+o4PXb1cWcopOfJVvPL6+O2QQ73+t87ljMoEjJXhsPMFYAmGDKwa1gOF+TKeqOj6hM9VLwGW+ViuZxb6UGYO6335hBAAKD1hB4aLqjQltXE6AfXAq2BEXx8GEIARBj11PaF1q2Wa67RM+cA+rQta0/Tujjtyoh8oE36WDBEEJQGoWBvh/2lNbHQa56b9MxFgO6wZWvqjfa0sbbBPDvIB/LKYfPcIaIIgdRSw5c3JPYvty2Gh3qDOUvPHAVo0pZ1j8hr46opRRuTdG2jKTSEBStkPrpEeHOXtKWC/pstyTX1hsv1Kxf9H50sMERCYG62HJ6jAIV6yGbYOypP9PPF1UZzii6rYXUJemaQF7i2GOp5BBFBUADjgd7Tbv3eunhrBXOF/sGH+RfPuzEDi91hY34CNMmQy+HIZZ8SXFpjtFexjrTRn5PXs8qk80EVIU7kFtoMf2dl7MDyWKVDLmb4t47kzg2KlE3meN3BnAYIbu51KA0nb/BrWbm42mirYmsbTZPihWERCG1SLNM0otBmcQVuoFc1GP9yU2Jjs0UJvHLR+/7xwoirHKMMqlbmOkAhQwTBoNg9Is8PiqoYaamgS2uM1fVmjuuejNQABi0ziAiC1JALdG2c/P76+HPLnPoEHSzIH54o/PK8pwEsWh41T2UA0K3L+4yr3r/CC4FurWSNKbKq3mipYGOe6h9XSNAgcz2pEWGioDvPdcoin1ti/9PV8c46Q2s4ejX49gf50wM8ZiKBsjHNZQMQTDRpwHCY5tGrgW3gwkrWVsU2NpkWw2tZOeZpuPmZufYAQl9HanC5RsT1TeZXNsa3tJgJi1waEd87lv/VBc8X4BhltjgoRYOpYuj/MOVjWa3xG53O4moDEfrH5aFe/+QN3jcqAMBiSPGRjfx9yLPVAFzqQEJNjCypZtvb7OW1jBEc89RL59zDfX4+0I6BYfyizDy5cgQofKEBoBDohIVbW62dC62WSoYAOV+d6OdvXfL7xkTO1xZDk05or1I+G7x5hkqDyzUlUJ+g65vMHQut2jgxKWZcdexacLDb6xuVDkNKoEyrvMsVoFtdUTfQKRu3LLB2tlktKcooulz3jYp3rwRnBviVMUkJUAST3QyoFE0tTXbPFwq41EJB0sLOWmNdk7mmwUiYBBHGPHX0avBGj9c7Kg0CYUCrfIMR5Q3QJxgpKHBd5ZAVdcaGZqOz1oibhCDcyMmT/fz0IL8xLq+Py0ACo8AQjZvjwkK1pB9UzWj4pMuR1CCk5goQIB0jjUnakWarG4xFacYIekJfH5fv9vmnB/mlkZvolKHNmocA3YqRy7XFsCFJtiywVjcYDQkaN9EXOuvrrozoyYieEdGfkyMFpW72ZQrVBiX3h47SEI7+mEjABUhYWB2ji9KspYIurzFq4iQM5Azk5aWMeKvX78mIMU+bdJ6gM98A+sRj1eBLLRUkLdJeRVc1GMtqjIYkdRiGnZRHXHV9XJ4f4qOeujQifaGF0mPeRFUawal76cOEVx4WRiYtFAra0yxl4eJqoylFGxIkbhJGgEudcVV3Rpy8wc8PiYGcDEM7jICaL+jMT4Bu9UWkAl/qcPhje5qtqTcbU7QlRWMmxgwUCgBgIC+1hnFfd2U4RQSAUwPc5XeZERmWoy+rYZUO8YWuidOFlTSQUBsnFkWCIDTkAzWQU/05eXaAnxsSAzkpNZgUDToB3zy81fMSoFsVEtwkKZy7UB0j7WmWtklHNauwSUOCmhQQwWETyUae0FM9aa3BMTAMenMFvtCUwPWsLHB9foiPB/rCsBjOqzFPheGokJuy9pHvKQzmtYQoIELMwPCvg3l5fVwKBeHiubWCUoIpC5fVGmET6KXVzJ5iE4oiHLsmxjxlM7yRU10ZYVG4PCbzXAdCKw0GBUYwbk5EdOY3Oo8FQHeQFCoGk37izVzMTHT7fOdyEH6g0iZ0iuQbRMh6KpATJjKMEJoUKcIENACg4bHq28fgMZM7tILF7qyP8cR0z99kaLM7ZrCABnhsmz0yeLzl01aGTJseojVIiCQCaHqqolsw82VKdAsiiQCKJAIokgigSCKAIokkAiiSCKBIIoAiiQCKJJIIoEgigCKJAIokAiiSSCKAIokAiiQCKJIIoEgiiQCKJAIokgigSCKAIokAiiSSCKBIIoAiiQCKJAIokkhmJP8f1nSOLcdRPSYAAAAASUVORK5CYII=";
+let deferredPrompt=null;window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredPrompt=e;});
+if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));}
+
+const mem={};
+const store={
+  async get(k){try{if(window.storage){const r=await window.storage.get(k);return r?JSON.parse(r.value):null;}}catch(e){}
+    try{const v=localStorage.getItem(k);if(v!=null)return JSON.parse(v);}catch(e){}return mem[k]??null;},
+  async set(k,v){mem[k]=v;try{if(window.storage){await window.storage.set(k,JSON.stringify(v));return;}}catch(e){}
+    try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}
+};
+
+let profile=null,diary={},weights=[],water={},cache={},custom={},settings={};
+let pendingProduct=null,searchResults=[],lastMealB64=null,lastMealMime=null;
+let calMonth=new Date();calMonth.setDate(1);let selDay=null;
+let liveStream=null,liveTimer=null;
+const todayKey=()=>new Date().toISOString().slice(0,10);
+const OFF="https://world.openfoodfacts.org";
+const OFFFIELDS="code,product_name,brands,nutriments,serving_size,nutriscore_grade,nova_group,additives_n,allergens_tags";
+
+(async function init(){
+  profile=await store.get('profile');diary=(await store.get('diary'))||{};weights=(await store.get('weights'))||[];
+  water=(await store.get('water'))||{};cache=(await store.get('cache'))||{};custom=(await store.get('custom'))||{};settings=(await store.get('settings'))||{};
+  const dark=settings.theme?settings.theme==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;
+  applyTheme(dark);
+  const h=new Date().getHours();greet.textContent=h<11?"Dobro jutro":h<18?"Dobar dan":"Dobro veče";
+  if(profile){fillForm();renderResult();}
+  ['pSex','pAge','pHt','pWt','pAct','pGoal','pTarget'].forEach(id=>document.getElementById(id).addEventListener('input',liveCalc));
+  renderAll();
+})();
+function fillForm(){pSex.value=profile.sex;pAge.value=profile.age;pHt.value=profile.ht;pWt.value=profile.wt;pAct.value=profile.act;pGoal.value=profile.goal;pTarget.value=profile.target||'';}
+function go(t){document.querySelectorAll('.tab').forEach(s=>s.classList.remove('active'));document.getElementById('tab-'+t).classList.add('active');
+  document.querySelectorAll('nav.tabs button').forEach(b=>b.classList.toggle('active',b.dataset.t===t));window.scrollTo(0,0);}
+
+/* ---- theme ---- */
+function applyTheme(dark){document.body.classList.toggle('dark',dark);document.getElementById('themeBtn').textContent=dark?'☀️':'🌙';
+  const tc=dark?'#161E1A':'#2F4A3A';const mt=document.querySelector('meta[name=theme-color]');if(mt)mt.content=tc;}
+async function toggleTheme(){const dark=!document.body.classList.contains('dark');applyTheme(dark);settings.theme=dark?'dark':'light';await store.set('settings',settings);}
+
+/* ---- calc + macro goals ---- */
+function readForm(){return{sex:pSex.value,age:pAge.value,ht:pHt.value,wt:pWt.value,act:pAct.value,goal:pGoal.value,target:pTarget.value};}
+function calc(p){const w=+p.wt,h=+p.ht,a=+p.age;const bmr=Math.round(10*w+6.25*h-5*a+(p.sex==='m'?5:-161));
+  const tdee=Math.round(bmr*+p.act);let goal=Math.round(tdee+ +p.goal),floored=false;const floor=p.sex==='m'?1500:1200;
+  if(goal<floor){goal=floor;floored=true;}const bmi=+(w/((h/100)**2)).toFixed(1);
+  const prot=Math.round(w*1.8),fat=Math.round(0.275*goal/9);
+  const carb=Math.max(0,Math.round((goal-prot*4-fat*9)/4)),fiber=Math.round(14*goal/1000),sugarLim=Math.round(0.10*goal/4),saltLim=5;
+  return{bmr,tdee,goal,bmi,prot,fat,carb,fiber,sugarLim,saltLim,floored,floor};}
+function bmiCat(b){return b<18.5?'pothranjenost':b<25?'normalna TM':b<30?'prekomjerna TM':'gojaznost';}
+function liveCalc(){const p=readForm();if(!p.age||!p.ht||!p.wt)return;renderResult(p);}
+async function saveProfile(){const p=readForm();if(!p.age||!p.ht||!p.wt){alert('Unesi godine, visinu i težinu.');return;}
+  profile=p;await store.set('profile',profile);if(weights.length===0){weights.push({d:todayKey(),kg:+p.wt});await store.set('weights',weights);}renderResult();renderAll();}
+
+function pol(cx,cy,r,deg){const a=deg*Math.PI/180;return[cx+r*Math.cos(a),cy-r*Math.sin(a)];}
+function arc(cx,cy,r,a1,a2){const[x1,y1]=pol(cx,cy,r,a1),[x2,y2]=pol(cx,cy,r,a2);return `M ${x1.toFixed(1)} ${y1.toFixed(1)} A ${r} ${r} 0 0 1 ${x2.toFixed(1)} ${y2.toFixed(1)}`;}
+function bmiAngle(b){const c=Math.max(15,Math.min(40,b));return 180-((c-15)/25)*180;}
+function drawBmiGauge(bmi){const cx=110,cy=112,r=88,w=15;const segs=[[15,18.5,'#5B8FB0'],[18.5,25,'#3E7C5E'],[25,30,'#B8924A'],[30,40,'#BE6A43']];
+  let s=segs.map(([a,b,c])=>`<path d="${arc(cx,cy,r,bmiAngle(a),bmiAngle(b))}" stroke="${c}" stroke-width="${w}" fill="none"/>`).join('');
+  const ang=bmiAngle(bmi),[nx,ny]=pol(cx,cy,r-6,ang);
+  s+=`<line x1="${cx}" y1="${cy}" x2="${nx.toFixed(1)}" y2="${ny.toFixed(1)}" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/><circle cx="${cx}" cy="${cy}" r="6" fill="var(--ink)"/>`;
+  s+=`<text x="22" y="128" font-size="10" fill="var(--muted)">18.5</text><text x="186" y="128" font-size="10" fill="var(--muted)">30+</text>`;
+  document.getElementById('bmiGauge').innerHTML=s;}
+function renderResult(p){p=p||profile;if(!p)return;const r=calc(p);resultCard.style.display='block';
+  rBmi.textContent=r.bmi;rBmr.textContent=r.bmr;rTdee.textContent=r.tdee;rGoal.textContent=r.goal;
+  rMacros.innerHTML=`P ${r.prot} · UH ${r.carb} · M ${r.fat} g<br>vlakna ${r.fiber} · šećer ≤${r.sugarLim} · so ≤${r.saltLim} g`;
+  rBmiCat.textContent='· '+bmiCat(r.bmi);drawBmiGauge(r.bmi);
+  let note='';if(r.floored)note+=`<div class="note warn">Cilj podignut na sigurnosni minimum (${r.floor} kcal).</div>`;
+  if(r.bmi<18.5)note+=`<div class="note warn">BMI ukazuje na pothranjenost — mršavljenje se ne preporučuje.</div>`;
+  else if(+p.goal<0&&r.bmi<22)note+=`<div class="note info">BMI je već zdrav — blagi deficit je dovoljan.</div>`;
+  profileNote.innerHTML=note;}
+
+/* ---- diary ---- */
+async function addEntry(o,key){key=key||todayKey();diary[key]=diary[key]||[];
+  diary[key].push({n:o.n,k:Math.round(o.k||0),p:Math.round(o.p||0),c:Math.round(o.c||0),f:Math.round(o.f||0),su:Math.round(o.su||0),fb:Math.round(o.fb||0),sa:+(o.sa||0).toFixed(2),src:o.src||'rucno'});
+  await store.set('diary',diary);renderAll();}
+async function delDay(key,i){diary[key].splice(i,1);await store.set('diary',diary);renderAll();}
+async function delEntry(i){await delDay(todayKey(),i);}
+function todayList(){return diary[todayKey()]||[];}
+function todaySum(){return todayList().reduce((a,e)=>({k:a.k+e.k,p:a.p+(e.p||0),c:a.c+(e.c||0),f:a.f+(e.f||0),su:a.su+(e.su||0),fb:a.fb+(e.fb||0),sa:a.sa+(e.sa||0)}),{k:0,p:0,c:0,f:0,su:0,fb:0,sa:0});}
+function streak(){let s=0,d=new Date();for(;;){const k=d.toISOString().slice(0,10);if(diary[k]&&diary[k].length){s++;d.setDate(d.getDate()-1);}else break;}return s;}
+async function addManual(){const n=fName.value.trim(),k=+fKcal.value;if(!n||!k){alert('Unesi naziv i kalorije.');return;}
+  await addEntry({n,k,p:+fProt.value||0,src:'rucno'});fName.value=fKcal.value=fProt.value='';go('danas');}
+
+/* ---- water ---- */
+function waterGoalMl(){return profile?Math.min(4000,Math.max(1500,Math.round(35*+profile.wt))):2500;}
+async function addWater(ml){const k=todayKey();water[k]=Math.max(0,(water[k]||0)+ml);await store.set('water',water);renderWater();}
+function renderWater(){const k=todayKey(),v=water[k]||0,g=waterGoalMl();
+  waterTxt.textContent=v+' ml';waterGoal.textContent='cilj '+g+' ml';waterBar.style.width=Math.min(100,v/g*100)+'%';}
+
+/* ---- Open Food Facts + cache + custom ---- */
+function numv(x){const n=parseFloat(x);return isNaN(n)?0:n;}
+function normOFF(p){const nu=p.nutriments||{};let kcal=numv(nu['energy-kcal_100g']);if(!kcal&&nu['energy_100g'])kcal=Math.round(numv(nu['energy_100g'])/4.184);
+  let serv=null;const m=(p.serving_size||'').match(/([\d.]+)\s*g/);if(m)serv=+m[1];
+  return{naziv:(p.product_name||'Nepoznat proizvod').trim(),brend:(p.brands||'').split(',')[0].trim(),code:p.code||'',
+    per100:{kcal,p:numv(nu.proteins_100g),c:numv(nu.carbohydrates_100g),f:numv(nu.fat_100g),su:numv(nu.sugars_100g),fb:numv(nu.fiber_100g),salt:numv(nu.salt_100g)},
+    serv,nutri:(p.nutriscore_grade||'').toUpperCase(),nova:p.nova_group||null,addn:(p.additives_n??null),
+    allerg:(p.allergens_tags||[]).map(t=>t.split(':').pop()).filter(Boolean)};}
+async function getJSON(url){let r;try{r=await fetch(url,{headers:{'Accept':'application/json'}});}catch(e){const er=new Error('net');er.kind='network';throw er;}
+  if(!r.ok){const er=new Error('http');er.kind=(r.status===429||r.status===503)?'rate':'http';er.status=r.status;throw er;}return r.json();}
+async function offByBarcode(code){const d=await getJSON(`${OFF}/api/v2/product/${code}.json?fields=${OFFFIELDS}`);return d.status===1?normOFF(d.product):null;}
+async function offSearch(q){const d=await getJSON(`${OFF}/cgi/search.pl?search_terms=${encodeURIComponent(q)}&search_simple=1&action=process&json=1&page_size=8&fields=${OFFFIELDS}`);
+  return (d.products||[]).filter(p=>p.product_name).map(normOFF).filter(p=>p.per100.kcal>0);}
+async function saveToCache(prod){if(!prod)return;const key=prod.code||prod.naziv;cache[key]={...prod,_ts:Date.now()};await store.set('cache',cache);}
+function dbErr(e){return e&&e.kind==='network'?'Veza ka bazi je blokirana ili nema interneta. U Claude pregledu je to očekivano — radi na telefonu / hostovanoj PWA. Sačuvani proizvodi rade offline.'
+  :e&&e.kind==='rate'?'Baza je preopterećena (HTTP '+(e.status||503)+'). Pokušaj za koji minut.':'Greška u komunikaciji sa bazom'+(e&&e.status?` (HTTP ${e.status})`:'')+'.';}
+async function lookupBarcode(code){if(custom[code])return custom[code];
+  try{const net=await offByBarcode(code);if(net){await saveToCache(net);return net;}}catch(e){if(cache[code])return cache[code];throw e;}
+  return cache[code]||null;}
+async function testDB(){const el=document.getElementById('dbTest');el.innerHTML='<div class="note info"><span class="spinner"></span> &nbsp;Testiram vezu…</div>';
+  try{const p=await offByBarcode('3017620422003');el.innerHTML=p?`<div class="note info">✅ Baza radi. Test: <b>${esc(p.naziv)}</b> — ${p.per100.kcal} kcal/100g.</div>`:'<div class="note warn">Veza radi, test proizvod nije vraćen.</div>';}
+  catch(e){el.innerHTML=`<div class="note warn">❌ ${esc(dbErr(e))}</div>`;}}
+
+/* ---- photo / barcode resolve ---- */
+function dataURLToBlob(b64,mime){const bin=atob(b64),u=new Uint8Array(bin.length);for(let i=0;i<bin.length;i++)u[i]=bin.charCodeAt(i);return new Blob([u],{type:mime});}
+function onPhoto(ev){const f=ev.target.files[0];if(!f)return;const rd=new FileReader();
+  rd.onload=()=>{previewImg.src=rd.result;preview.style.display='block';scanProduct(rd.result.split(',')[1],f.type);};rd.readAsDataURL(f);}
+async function scanProduct(b64,mime){scanResult.innerHTML='';scanStatus.innerHTML='<div class="note info"><span class="spinner"></span> &nbsp;Čitam barkod / tražim proizvod…</div>';
+  let code=null,name=null;
+  try{if('BarcodeDetector' in window){const det=new BarcodeDetector({formats:['ean_13','ean_8','upc_a','upc_e']});
+    const bmp=await createImageBitmap(dataURLToBlob(b64,mime));const codes=await det.detect(bmp);if(codes.length)code=codes[0].rawValue;}}catch(e){}
+  if(!code){try{const v=await claudeRead(b64,mime);code=v.barkod||null;name=v.naziv||null;}catch(e){}}
+  await resolve(code,name);}
+async function resolve(code,name){let prod=null,dberr=null;
+  if(code){try{prod=await lookupBarcode(code);}catch(e){dberr=e;}}
+  if(!prod&&name){try{const list=await offSearch(name);if(list.length){prod=list[0];await saveToCache(prod);}}catch(e){dberr=e;}}
+  if(prod){scanStatus.innerHTML=code?`<div class="src">Barkod: ${esc(code)}</div>`:'';showProduct(prod,'scanResult');}
+  else if(dberr){scanStatus.innerHTML=`<div class="note warn">${esc(dbErr(dberr))}</div>`+addMissingBtn(code,name);}
+  else{scanStatus.innerHTML=`<div class="note warn">Proizvod nije u bazi${code?` (barkod ${esc(code)})`:''}.</div>`+addMissingBtn(code,name);}}
+function addMissingBtn(code,name){return `<button class="btn ghost" onclick="openAdd('${esc(code||'')}','${esc((name||'').replace(/'/g,''))}')">➕ Dodaj proizvod koji fali</button>`;}
+async function claudeRead(b64,mime){const res=await fetch("https://api.anthropic.com/v1/messages",{method:"POST",headers:{"Content-Type":"application/json"},
+  body:JSON.stringify({model:"claude-sonnet-4-6",max_tokens:400,messages:[{role:"user",content:[
+    {type:"image",source:{type:"base64",media_type:mime||"image/jpeg",data:b64}},
+    {type:"text",text:"Na slici je prehrambeni proizvod. Pročitaj barkod (EAN cifre ako se vide) i pun naziv sa brendom. Odgovori ISKLJUČIVO JSON-om bez teksta: {\"barkod\":\"samo cifre ili prazno\",\"naziv\":\"brend i naziv\"}"}]}]})});
+  const data=await res.json();let t=(data.content||[]).filter(c=>c.type==='text').map(c=>c.text).join('').replace(/```json|```/g,'').trim();return JSON.parse(t);}
+
+function nutriColor(g){return{A:'#2E7D5B',B:'#7DB343',C:'#C9A227',D:'#E0892E',E:'#D9542E'}[g]||'#8B8475';}
+function novaColor(n){return['','#3E7C5E','#B8924A','#E0892E','#BE6A43'][n]||'#8B8475';}
+function qualHTML(p){let q='';if(p.nutri&&'ABCDE'.includes(p.nutri))q+=`<span class="badge" style="background:${nutriColor(p.nutri)}">Nutri-Score ${p.nutri}</span>`;
+  if(p.nova)q+=`<span class="badge" style="background:${novaColor(p.nova)}">NOVA ${p.nova}</span>`;
+  if(p.addn!=null)q+=`<span class="chip2">Aditivi: ${p.addn}</span>`;
+  if(p.allerg&&p.allerg.length)q+=`<span class="chip2">Alergeni: ${esc(p.allerg.slice(0,4).join(', '))}</span>`;
+  return q?`<div class="qual">${q}</div>`:'';}
+function showProduct(prod,target){pendingProduct=prod;const g=prod.serv||100;
+  document.getElementById(target).innerHTML=`<div class="prod">
+    <div class="nmx">${esc(prod.naziv)}</div>${prod.brend?`<div class="br">${esc(prod.brend)}</div>`:''}
+    ${qualHTML(prod)}
+    <div class="ntab">
+      <div><div class="nv num">${prod.per100.kcal||'—'}</div><div class="nl">kcal/100g</div></div>
+      <div><div class="nv num">${prod.per100.p}</div><div class="nl">prot</div></div>
+      <div><div class="nv num">${prod.per100.c}</div><div class="nl">UH</div></div>
+      <div><div class="nv num">${prod.per100.f}</div><div class="nl">masti</div></div>
+      <div><div class="nv num">${prod.per100.su}</div><div class="nl">šećeri</div></div>
+    </div>
+    <label>Koliko si pojeo (g)</label>
+    <input id="pg" type="number" inputmode="numeric" value="${g}" oninput="calcPending()">
+    <div id="pgOut" class="src"></div>
+    <button class="btn green" onclick="addPending()">Dodaj u dnevnik</button>
+    <div class="src">Izvor: ${prod.code&&custom[prod.code]?'moja baza':'Open Food Facts'}</div></div>`;
+  calcPending();}
+function calcPending(){if(!pendingProduct)return;const g=+document.getElementById('pg').value||0,f=g/100,P=pendingProduct.per100;
+  pendingProduct._calc={k:Math.round(P.kcal*f),p:Math.round(P.p*f),c:Math.round(P.c*f),ft:Math.round(P.f*f),su:Math.round(P.su*f),fb:Math.round(P.fb*f),sa:+(P.salt*f).toFixed(2)};
+  const o=pendingProduct._calc;document.getElementById('pgOut').innerHTML=`= <b>${o.k} kcal</b> · ${o.p}g P · ${o.c}g UH · ${o.ft}g M · ${o.su}g šećer`;}
+async function addPending(){if(!pendingProduct||!pendingProduct._calc)return;const c=pendingProduct._calc;
+  await addEntry({n:(pendingProduct.brend?pendingProduct.brend+' ':'')+pendingProduct.naziv,k:c.k,p:c.p,c:c.c,f:c.ft,su:c.su,fb:c.fb,sa:c.sa,src:custom[pendingProduct.code]?'baza':'baza'});
+  scanResult.innerHTML='';document.getElementById('searchResults').innerHTML='';searchResults=[];pendingProduct=null;go('danas');}
+
+/* ---- saved / recent ---- */
+function renderSaved(){const all=[...Object.values(custom).map(p=>({...p,_src:'custom'})),...Object.values(cache)];
+  const seen={},rec=[];all.sort((a,b)=>(b._ts||9e15)-(a._ts||0)).forEach(p=>{const k=p.code||p.naziv;if(!seen[k]){seen[k]=1;rec.push(p);}});
+  const top=rec.slice(0,8);const card=document.getElementById('savedCard');
+  if(!top.length){card.style.display='none';return;}card.style.display='block';
+  document.getElementById('savedList').innerHTML=top.map((p,i)=>`<div class="res" onclick="openSaved(${i})"><div class="info"><div class="t">${esc(p.naziv)}</div><div class="m">${esc(p.brend||'')} · ${p.per100.kcal} kcal/100g</div></div><div style="color:var(--green);font-size:20px">＋</div></div>`).join('');
+  window._saved=top;}
+function openSaved(i){showProduct(window._saved[i],'searchResults');document.getElementById('searchResults').scrollIntoView({behavior:'smooth'});}
+
+/* ---- name search ---- */
+async function searchName(){const v=q.value.trim();if(!v)return;searchStatus.innerHTML='<div class="note info"><span class="spinner"></span> &nbsp;Pretražujem…</div>';document.getElementById('searchResults').innerHTML='';
+  try{const list=await offSearch(v);searchResults=list;searchStatus.innerHTML='';
+    if(!list.length){searchStatus.innerHTML='<div class="note warn">Nema rezultata. Probaj drugačiji naziv (često pomaže engleski za strane brendove).</div>'+addMissingBtn('',v);return;}
+    list.forEach(p=>saveToCache(p));
+    document.getElementById('searchResults').innerHTML=list.map((p,i)=>`<div class="res" onclick="pickResult(${i})"><div class="info"><div class="t">${esc(p.naziv)}</div><div class="m">${esc(p.brend||'')} · ${p.per100.kcal} kcal/100g</div></div><div style="color:var(--green);font-size:20px">＋</div></div>`).join('');
+  }catch(e){searchStatus.innerHTML=`<div class="note warn">${esc(dbErr(e))}</div>`+addMissingBtn('',v);}}
+function pickResult(i){showProduct(searchResults[i],'searchResults');}
+
+/* ---- add missing / custom (#10) ---- */
+function openAdd(code,name){document.getElementById('apName').value=name||'';document.getElementById('apCode').value=code||'';
+  document.getElementById('apKcal').value=document.getElementById('apP').value=document.getElementById('apC').value=document.getElementById('apF').value=document.getElementById('apSu').value='';
+  const ol=document.getElementById('offLink');ol.href=code?`${OFF}/cgi/product.pl?type=add&code=${code}`:`${OFF}/cgi/product.pl?type=add`;
+  document.getElementById('addModal').classList.add('open');}
+async function saveCustom(){const n=document.getElementById('apName').value.trim(),k=+document.getElementById('apKcal').value;
+  if(!n||!k){alert('Unesi bar naziv i kcal/100g.');return;}
+  const code=document.getElementById('apCode').value.trim()||('c_'+Date.now());
+  const prod={naziv:n,brend:'',code,per100:{kcal:k,p:+document.getElementById('apP').value||0,c:+document.getElementById('apC').value||0,f:+document.getElementById('apF').value||0,su:+document.getElementById('apSu').value||0,fb:0,salt:0},serv:null,nutri:'',nova:null,addn:null,allerg:[],_ts:Date.now()};
+  custom[code]=prod;await store.set('custom',custom);document.getElementById('addModal').classList.remove('open');
+  renderSaved();showProduct(prod,'scanResult');go('skener');}
+
+/* ---- live scanner (#5) ---- */
+async function startLiveScan(){if(!('BarcodeDetector' in window)){alert('Uživo skener nije podržan u ovom browseru (probaj Chrome na Androidu) — koristi „Slikaj proizvod".');return;}
+  document.getElementById('scanModal').classList.add('open');document.getElementById('liveStatus').textContent='Usmjeri kameru na barkod…';
+  try{liveStream=await navigator.mediaDevices.getUserMedia({video:{facingMode:'environment'}});
+    const v=document.getElementById('scanVideo');v.srcObject=liveStream;
+    const det=new BarcodeDetector({formats:['ean_13','ean_8','upc_a','upc_e']});
+    liveTimer=setInterval(async()=>{try{const codes=await det.detect(v);if(codes.length){const code=codes[0].rawValue;stopLiveScan();
+      scanStatus.innerHTML='<div class="note info"><span class="spinner"></span> &nbsp;Barkod '+esc(code)+' — tražim…</div>';await resolve(code,null);}}catch(e){}},500);
+  }catch(e){document.getElementById('liveStatus').textContent='Kamera nije dostupna (dozvola odbijena ili nema HTTPS). Koristi „Slikaj proizvod".';}}
+function stopLiveScan(){if(liveTimer){clearInterval(liveTimer);liveTimer=null;}if(liveStream){liveStream.getTracks().forEach(t=>t.stop());liveStream=null;}
+  document.getElementById('scanModal').classList.remove('open');}
+
+/* ---- AI meal estimate ---- */
+function onMeal(ev){const f=ev.target.files[0];if(!f)return;const rd=new FileReader();rd.onload=()=>{lastMealB64=rd.result.split(',')[1];lastMealMime=f.type;estimateMeal();};rd.readAsDataURL(f);}
+async function estimateMeal(){mealStatus.innerHTML='<div class="note info"><span class="spinner"></span> &nbsp;Procjenjujem jelo…</div>';mealResult.innerHTML='';
+  try{const res=await fetch("https://api.anthropic.com/v1/messages",{method:"POST",headers:{"Content-Type":"application/json"},
+    body:JSON.stringify({model:"claude-sonnet-4-6",max_tokens:800,messages:[{role:"user",content:[
+      {type:"image",source:{type:"base64",media_type:lastMealMime||"image/jpeg",data:lastMealB64}},
+      {type:"text",text:"Procijeni kuvano jelo na slici. Odgovori ISKLJUČIVO JSON-om na srpskom (ijekavica), bez teksta: {\"naziv\":\"...\",\"kcal\":000,\"proteini\":00,\"ugljeni_hidrati\":00,\"masti\":00,\"napomena\":\"kratko\"}"}]}]})});
+    const data=await res.json();let t=(data.content||[]).filter(c=>c.type==='text').map(c=>c.text).join('').replace(/```json|```/g,'').trim();const r=JSON.parse(t);window._meal=r;mealStatus.innerHTML='';
+    mealResult.innerHTML=`<div class="prod"><div class="nmx">${esc(r.naziv)}</div>
+      <div class="ntab"><div><div class="nv num">${r.kcal}</div><div class="nl">kcal</div></div><div><div class="nv num">${r.proteini}</div><div class="nl">prot</div></div><div><div class="nv num">${r.ugljeni_hidrati}</div><div class="nl">UH</div></div><div><div class="nv num">${r.masti}</div><div class="nl">masti</div></div></div>
+      ${r.napomena?`<div class="note warn">${esc(r.napomena)} (procjena)</div>`:''}
+      <button class="btn green" onclick="addMeal()">Dodaj u dnevnik</button></div>`;
+  }catch(e){mealStatus.innerHTML='<div class="note warn">Procjena nije uspjela. Unesi ručno.</div>';}}
+async function addMeal(){const r=window._meal;if(!r)return;await addEntry({n:r.naziv,k:r.kcal,p:r.proteini,c:r.ugljeni_hidrati,f:r.masti,src:'foto'});mealResult.innerHTML='';go('danas');}
+
+/* ---- export / backup (#19,#24) ---- */
+function download(name,text,mime){const b=new Blob([text],{type:mime});const u=URL.createObjectURL(b);const a=document.createElement('a');a.href=u;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),1500);}
+function exportCSV(){const sep=';';let rows=['Datum'+sep+'Naziv'+sep+'kcal'+sep+'Proteini(g)'+sep+'UH(g)'+sep+'Masti(g)'+sep+'Secer(g)'+sep+'Vlakna(g)'+sep+'So(g)'+sep+'Izvor'];
+  Object.keys(diary).sort().forEach(d=>(diary[d]||[]).forEach(e=>rows.push([d,'"'+String(e.n).replace(/"/g,'""')+'"',e.k,e.p||0,e.c||0,e.f||0,e.su||0,e.fb||0,e.sa||0,e.src||''].join(sep))));
+  download('arsenijev-tata-dnevnik.csv','\ufeff'+rows.join('\n'),'text/csv');}
+function exportPDF(){const s=todaySum();let body=`<h1>Arsenijev tata — sažetak</h1><p>Generisano: ${new Date().toLocaleString('sr-Latn-ME')}</p>`;
+  if(profile){const r=calc(profile);body+=`<h2>Profil</h2><p>BMI ${r.bmi} · TDEE ${r.tdee} kcal · cilj ${r.goal} kcal · proteini ${r.prot} g</p>`;}
+  body+=`<h2>Danas</h2><p>${s.k} kcal · ${s.p}g P · ${s.c}g UH · ${s.f}g M · ${s.su}g šećer</p>`;
+  if(weights.length){body+=`<h2>Težina</h2><p>${weights[0].kg} kg → ${weights[weights.length-1].kg} kg</p>`;}
+  body+=`<h2>Istorija (zadnjih 30 dana)</h2><table border=1 cellpadding=5 style="border-collapse:collapse"><tr><th>Datum</th><th>kcal</th><th>P</th><th>UH</th><th>M</th></tr>`;
+  Object.keys(diary).sort().reverse().slice(0,30).forEach(d=>{const t=(diary[d]||[]).reduce((a,e)=>({k:a.k+e.k,p:a.p+(e.p||0),c:a.c+(e.c||0),f:a.f+(e.f||0)}),{k:0,p:0,c:0,f:0});body+=`<tr><td>${d}</td><td>${t.k}</td><td>${t.p}</td><td>${t.c}</td><td>${t.f}</td></tr>`;});
+  body+=`</table>`;const html=`<html><head><meta charset="utf-8"><title>Sažetak</title><style>body{font-family:sans-serif;padding:24px;color:#233027}h1{font-size:22px}h2{font-size:16px;margin-top:18px}</style></head><body>${body}<script>print()<\/script></body></html>`;
+  const w=window.open('','_blank');if(w){w.document.write(html);w.document.close();}else download('arsenijev-tata-sazetak.html',html,'text/html');}
+async function backupJSON(){const all={profile,diary,weights,water,cache,custom,settings,_v:1,_d:new Date().toISOString()};
+  download('arsenijev-tata-backup.json',JSON.stringify(all,null,2),'application/json');}
+function restoreJSON(ev){const f=ev.target.files[0];if(!f)return;const rd=new FileReader();
+  rd.onload=async()=>{try{const a=JSON.parse(rd.result);if(!confirm('Vratiti podatke iz kopije? Trenutni podaci se zamjenjuju.'))return;
+    profile=a.profile||null;diary=a.diary||{};weights=a.weights||[];water=a.water||{};cache=a.cache||{};custom=a.custom||{};settings=a.settings||{};
+    await store.set('profile',profile);await store.set('diary',diary);await store.set('weights',weights);await store.set('water',water);await store.set('cache',cache);await store.set('custom',custom);await store.set('settings',settings);
+    if(profile)fillForm();renderResult();applyTheme(settings.theme==='dark');renderAll();alert('Podaci su vraćeni.');}
+    catch(e){alert('Neispravan fajl.');}};rd.readAsText(f);}
+
+/* ---- render ---- */
+function renderAll(){const s=todaySum();hEaten.textContent=s.k;streak.textContent='🔥 '+streak()+' dana';
+  const tagN={baza:'baza',foto:'foto',rucno:'ručno'};
+  document.getElementById('entries').innerHTML=todayList().length?todayList().map((e,i)=>`<div class="entry"><div class="nm"><div class="t">${esc(e.n)}<span class="tag">${tagN[e.src]||''}</span></div><div class="m">${e.p||0}g P · ${e.c||0}g UH · ${e.f||0}g M${e.su?` · ${e.su}g šećera`:''}</div></div><div class="kc num">${e.k} kcal</div><button class="x" onclick="delEntry(${i})">×</button></div>`).join('')
+    :'<div class="empty">Još nema unosa. Skeniraj proizvod u kartici "Skener".</div>';
+  if(profile){const r=calc(profile);hGoal.textContent=r.goal;const rem=r.goal-s.k,pct=Math.min(1,s.k/r.goal),C=377;ring.setAttribute('stroke-dashoffset',(C*(1-pct)).toFixed(0));
+    if(s.k>r.goal){ring.setAttribute('stroke','#F0B79A');ringNum.textContent=(s.k-r.goal);ringLbl.textContent='preko cilja';hBal.innerHTML=`<span class="terra">suficit +${s.k-r.goal}</span>`;}
+    else{ring.setAttribute('stroke','#A6D8BC');ringNum.textContent=rem;ringLbl.textContent='preostalo';hBal.innerHTML=`<span class="ok">deficit ${rem}</span>`;}
+  }else{hGoal.textContent='—';ringNum.textContent='—';hBal.textContent='postavi profil';}
+  renderMacros(s);renderWater();renderWeek();renderWeights();renderSaved();
+  if(document.getElementById('calGrid')){renderCalendar();renderProgress();}}
+function bar(lbl,val,goal,unit,limit){const over=limit&&val>goal;const pct=goal?Math.min(100,val/goal*100):0;
+  return `<div class="pwrap"><div class="top"><span>${lbl}${limit?' (limit)':''}</span><span class="num" style="${over?'color:var(--terra)':''}">${val} / ${goal} ${unit}</span></div><div class="pbar ${over?'over':''}"><i style="width:${pct}%"></i></div></div>`;}
+function renderMacros(s){const mg=document.getElementById('macroGoals');
+  if(profile){const r=calc(profile);mg.innerHTML=bar('Proteini',s.p,r.prot,'g')+bar('Ugljeni hidrati',s.c,r.carb,'g')+bar('Masti',s.f,r.fat,'g')+bar('Vlakna',s.fb,r.fiber,'g')+bar('Šećeri',s.su,r.sugarLim,'g',true)+bar('So',+s.sa.toFixed(1),r.saltLim,'g',true);}
+  else mg.innerHTML='<div class="src">Postavi profil za makro ciljeve.</div>';
+  const pk=s.p*4,ck=s.c*4,fk=s.f*9,tot=pk+ck+fk;const mb=document.getElementById('macrobar');
+  if(!tot){mb.innerHTML='';document.getElementById('mlegend').innerHTML='<span style="color:var(--muted)">Dodaj obrok da vidiš raspodjelu.</span>';return;}
+  mb.innerHTML=`<span style="width:${(pk/tot*100).toFixed(0)}%;background:var(--prot)"></span><span style="width:${(ck/tot*100).toFixed(0)}%;background:var(--carb)"></span><span style="width:${(fk/tot*100).toFixed(0)}%;background:var(--fat)"></span>`;
+  document.getElementById('mlegend').innerHTML=`<span><i style="background:var(--prot)"></i>Proteini ${s.p}g</span><span><i style="background:var(--carb)"></i>UH ${s.c}g</span><span><i style="background:var(--fat)"></i>Masti ${s.f}g</span><span><i style="background:var(--sugar)"></i>Šećeri ${s.su}g</span>`;}
+function renderWeek(){const W=320,H=150,pad=24,bw=24;const days=[];
+  for(let i=6;i>=0;i--){const d=new Date();d.setDate(d.getDate()-i);const k=d.toISOString().slice(0,10);days.push({k,lbl:['ned','pon','uto','sri','čet','pet','sub'][d.getDay()],v:(diary[k]||[]).reduce((a,e)=>a+e.k,0)});}
+  const goal=profile?calc(profile).goal:0,maxV=Math.max(goal,...days.map(d=>d.v),1)*1.1;
+  const x0=pad,x1=W-8,plotW=x1-x0,base=H-22,top=12,bx=i=>x0+(plotW/7)*i+(plotW/7-bw)/2,hy=v=>base-(v/maxV)*(base-top);
+  let s='';days.forEach((d,i)=>{const col=goal&&d.v>goal?'#BE6A43':'#3E7C5E';
+    s+=`<rect x="${bx(i).toFixed(1)}" y="${hy(d.v).toFixed(1)}" width="${bw}" height="${Math.max(0,base-hy(d.v)).toFixed(1)}" rx="5" fill="${col}" opacity="${d.v?0.92:0.25}"/>`;
+    if(d.v)s+=`<text x="${(bx(i)+bw/2).toFixed(1)}" y="${(hy(d.v)-5).toFixed(1)}" font-size="9" fill="var(--muted)" text-anchor="middle">${d.v}</text>`;
+    s+=`<text x="${(bx(i)+bw/2).toFixed(1)}" y="${H-6}" font-size="10" fill="var(--muted)" text-anchor="middle">${d.lbl}</text>`;});
+  if(goal){const gy=hy(goal);s=`<line x1="${x0}" y1="${gy.toFixed(1)}" x2="${x1}" y2="${gy.toFixed(1)}" stroke="#B8924A" stroke-width="1.5" stroke-dasharray="4 4"/>`+s;}
+  document.getElementById('week').innerHTML=s;}
+async function addWeight(){const v=+wKg.value;if(!v){alert('Unesi težinu.');return;}const d=todayKey(),ex=weights.find(w=>w.d===d);
+  if(ex)ex.kg=v;else weights.push({d,kg:v});weights.sort((a,b)=>a.d.localeCompare(b.d));await store.set('weights',weights);
+  if(profile){profile.wt=v;await store.set('profile',profile);pWt.value=v;renderResult();}wKg.value='';renderAll();}
+function renderWeights(){const sp=document.getElementById('spark'),wl=document.getElementById('wlist');
+  if(weights.length<2){trendSub.textContent=weights.length?'Dodaj još zapisa za trend.':'Nema zapisa.';sp.innerHTML='';}
+  else{const ks=weights.map(w=>w.kg),min=Math.min(...ks),max=Math.max(...ks),rng=(max-min)||1,W=320,H=130,pad=14;
+    const pts=weights.map((w,i)=>[pad+(i/(weights.length-1))*(W-2*pad),pad+(1-(w.kg-min)/rng)*(H-2*pad-14)]);
+    const path=pts.map((p,i)=>(i?'L':'M')+p[0].toFixed(1)+' '+p[1].toFixed(1)).join(' ');
+    const area=path+` L${pts[pts.length-1][0].toFixed(1)} ${H-14} L${pts[0][0].toFixed(1)} ${H-14} Z`;
+    sp.innerHTML=`<path d="${area}" fill="rgba(62,124,94,.10)"/><path d="${path}" fill="none" stroke="#3E7C5E" stroke-width="2.5" stroke-linejoin="round"/>`+
+      pts.map((p,i)=>`<circle cx="${p[0].toFixed(1)}" cy="${p[1].toFixed(1)}" r="3" fill="#3E7C5E"/>`+(i===pts.length-1?`<text x="${p[0].toFixed(1)}" y="${(p[1]-8).toFixed(1)}" font-size="11" fill="var(--ink)" text-anchor="end" font-weight="600">${weights[i].kg}kg</text>`:'')).join('');
+    const diff=+(weights[weights.length-1].kg-weights[0].kg).toFixed(1);
+    trendSub.innerHTML=`Od ${weights[0].kg} do ${weights[weights.length-1].kg} kg · <b style="color:${diff<=0?'#3E7C5E':'#BE6A43'}">${diff>0?'+':''}${diff} kg</b>`;}
+  const pr=document.getElementById('projection');pr.innerHTML='';
+  if(profile&&profile.target&&weights.length){const cur=weights[weights.length-1].kg,tgt=+profile.target,def=+profile.goal;
+    if(def<0&&cur>tgt){const kgw=Math.abs(def)*7/7700,weeks=Math.ceil((cur-tgt)/kgw),dt=new Date();dt.setDate(dt.getDate()+weeks*7);
+      pr.innerHTML=`<div class="note info">Do cilja od <b>${tgt} kg</b>: još <b>${(cur-tgt).toFixed(1)} kg</b>. Pri tempu ~${kgw.toFixed(2)} kg/sedm.: <b>~${weeks} sedm.</b>, oko <b>${dt.toLocaleDateString('sr-Latn-ME',{day:'numeric',month:'long',year:'numeric'})}</b>.</div>`;}
+    else if(cur<=tgt&&def<0)pr.innerHTML=`<div class="note info">🎉 Dostigao si ciljnu težinu (${tgt} kg).</div>`;}
+  wl.innerHTML=[...weights].reverse().slice(0,8).map(w=>`<div class="entry"><div class="nm"><div class="t num">${w.kg} kg</div></div><div style="color:var(--muted);font-size:12px">${new Date(w.d).toLocaleDateString('sr-Latn-ME',{day:'numeric',month:'short'})}</div></div>`).join('');}
+
+/* ---- calendar ---- */
+const MON=['januar','februar','mart','april','maj','jun','jul','avgust','septembar','oktobar','novembar','decembar'];
+const WD=['pon','uto','sri','čet','pet','sub','ned'];
+function dayKcal(key){return (diary[key]||[]).reduce((a,e)=>a+e.k,0);}
+function dayStatus(key){if(!(diary[key]&&diary[key].length))return{logged:false};const k=dayKcal(key),goal=profile?calc(profile).goal:0;return{logged:true,over:goal?k>goal:false};}
+function changeMonth(d){calMonth.setMonth(calMonth.getMonth()+d);renderCalendar();renderProgress();}
+function renderCalendar(){if(selDay===null)selDay=todayKey();const y=calMonth.getFullYear(),m=calMonth.getMonth(),tk=todayKey();
+  document.getElementById('calTitle').textContent=MON[m]+' '+y;
+  const lead=(new Date(y,m,1).getDay()+6)%7,days=new Date(y,m+1,0).getDate();let cells=WD.map(w=>`<div class="cwd">${w}</div>`).join('');
+  for(let i=0;i<lead;i++)cells+='<div class="cday empty"></div>';
+  for(let d=1;d<=days;d++){const key=`${y}-${String(m+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;const st=dayStatus(key);let cls='cday';if(st.logged)cls+=st.over?' over':' under';
+    if(key===tk)cls+=' today';if(key===selDay)cls+=' sel';if(key>tk)cls+=' fut';cells+=`<div class="${cls}" onclick="selectDay('${key}')">${d}</div>`;}
+  document.getElementById('calGrid').innerHTML=cells;renderDayDetail();}
+function selectDay(key){selDay=key;renderCalendar();}
+function renderDayDetail(){const box=document.getElementById('dayDetail'),list=diary[selDay]||[];const dt=new Date(selDay+'T00:00:00');
+  const lbl=selDay===todayKey()?'Danas':dt.toLocaleDateString('sr-Latn-ME',{weekday:'long',day:'numeric',month:'long'});
+  const goal=profile?calc(profile).goal:0,tot=dayKcal(selDay);
+  let h=`<div class="dd-h"><b>${lbl}</b><span class="num">${tot}${goal?' / '+goal:''} kcal</span></div>`;
+  h+=list.length?list.map((e,i)=>`<div class="entry"><div class="nm"><div class="t">${esc(e.n)}</div><div class="m">${e.p||0}g P · ${e.c||0}g UH · ${e.f||0}g M</div></div><div class="kc num">${e.k}</div><button class="x" onclick="delDay('${selDay}',${i})">×</button></div>`).join('')
+    :'<div class="empty">Nema unosa za ovaj dan.</div>';
+  h+=`<label>Dodaj za ovaj dan</label><div class="row"><div><input id="cdName" placeholder="Naziv"></div><div style="flex:0 0 92px"><input id="cdKcal" type="number" inputmode="numeric" placeholder="kcal"></div><div style="flex:0 0 auto;display:flex;align-items:flex-end"><button class="btn sm green" onclick="addToDay()">＋</button></div></div>`;
+  box.innerHTML=h;}
+async function addToDay(){const n=document.getElementById('cdName').value.trim(),k=+document.getElementById('cdKcal').value;if(!n||!k){alert('Unesi naziv i kalorije.');return;}await addEntry({n,k,src:'rucno'},selDay);}
+function bestStreak(){const keys=Object.keys(diary).filter(k=>diary[k]&&diary[k].length).sort();if(!keys.length)return 0;let best=1,cur=1;
+  for(let i=1;i<keys.length;i++){if((new Date(keys[i])-new Date(keys[i-1]))/864e5===1){cur++;best=Math.max(best,cur);}else cur=1;}return best;}
+function renderProgress(){const y=calMonth.getFullYear(),m=calMonth.getMonth(),tk=todayKey();document.getElementById('progMonth').textContent=MON[m]+' '+y;
+  const keys=Object.keys(diary).filter(k=>{const d=new Date(k);return d.getFullYear()===y&&d.getMonth()===m&&diary[k].length&&k<=tk;});
+  const goal=profile?calc(profile).goal:0;let tot=0,under=0,deficit=0;keys.forEach(k=>{const v=dayKcal(k);tot+=v;if(goal){if(v<=goal)under++;deficit+=(goal-v);}});
+  const logged=keys.length,avg=logged?Math.round(tot/logged):0,kg=deficit/7700;
+  const wm=weights.filter(w=>{const d=new Date(w.d);return d.getFullYear()===y&&d.getMonth()===m;});const wch=wm.length>=2?+(wm[wm.length-1].kg-wm[0].kg).toFixed(1):null;
+  const cards=[['Dana evidentirano',logged,''],['Prosjek',avg||'—','kcal/dan']];
+  if(goal){cards.push(['Dana u cilju',`${under}/${logged}`,''],['Procjena promjene',(deficit>0?'-':deficit<0?'+':'')+Math.abs(kg).toFixed(2),'kg']);}
+  cards.push(['Trenutni niz',streak(),'dana'],['Najduži niz',bestStreak(),'dana']);if(wch!==null)cards.push(['Težina (mjesec)',(wch>0?'+':'')+wch,'kg']);
+  document.getElementById('progGrid').innerHTML=cards.map(c=>`<div class="stat"><div class="k">${c[0]}</div><div class="v num">${c[1]} <small>${c[2]}</small></div></div>`).join('');}
+
+async function installApp(){if(deferredPrompt){deferredPrompt.prompt();await deferredPrompt.userChoice;deferredPrompt=null;return;}
+  const standalone=window.matchMedia('(display-mode: standalone)').matches||navigator.standalone;
+  installBody.innerHTML=standalone?'<p style="font-size:14px">Aplikacija je već instalirana. 👍</p>'
+    :'<p style="font-size:14px">Za ikonicu na početnom ekranu:</p><ol><li>Otvori stranicu u <b>Chrome</b>-u na Androidu.</li><li>Meni (⋮) → <b>Dodaj na početni ekran</b>.</li><li>Potvrdi "Arsenijev tata" → <b>Dodaj</b>.</li></ol><p style="font-size:13px;color:var(--muted)">Uz service worker radi i offline za već viđene proizvode.</p>';
+  document.getElementById('installModal').classList.add('open');}
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+</script>
+</body>
+</html>
